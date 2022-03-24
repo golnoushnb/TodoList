@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  background-color: #fcd894;
+  font-family: "Architects Daughter", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  background-image: url(/src/img/dotted-lined-paper.png);
+  padding: 30px;
+  min-width: 450px;
+  min-height: 650px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 3px 6px 40px #000;
+}
+.header h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.todo-form input {
+  padding: 10px 15px;
+  width: 70%;
+  border: 0;
+  border-bottom: 3px dashed #fdcb6e;
+  background-color: transparent;
+  font-family: "Architects Daughter", sans-serif;
+  font-size: 1.5rem;
+  color: #494a4b;
+}
+.todo-form button {
+  margin-left: 10px;
+  margin-top: 30px;
+  border: 3px solid #494a4b;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-family: "Architects Daughter", sans-serif;
+  background-color: #fcd894;
+  font-size: 0.9rem;
+  color: #494a4b;
+}
+
+.todo-list input {
+  margin-top: 10px;
+  border: none;
+  width: 220px;
+  font-family: "Architects Daughter", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+.todo-list li {
+  display: flex;
+  margin: 20px 0;
+  border: 1px #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-height: 30px;
+}
+
+.todo-list button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 28px;
+  border-radius: 50%;
+}
+.btn-complete {
+  color: #20b286;
+  margin-right: 10px;
+}
+.btn-edit {
+  color: #847bbb;
+  margin-right: 10px;
+}
+.btn-delete {
+  color: #f75c5c;
+}
+.complete {
+  text-decoration-line: line-through;
+  position: relative;
+  text-decoration-color: #f75c5c;
+  opacity: 0.4;
+}
